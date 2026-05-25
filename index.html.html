@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Dental Smiler</title>
+<style>
+body{font-family:sans-serif;margin:0;background:#F0F8FF;color:#000000}
+header{background:#fff;padding:15px;display:flex;align-items:center;gap:15px;border-bottom:3px solid #3498db}
+.logo{width:70px;height:auto;border-radius:5px}
+h1{margin:0;color:#2c3e50}
+
+/* Contenedor principal que se estira para no dejar espacio abajo */
+.contenedor-principal {
+    display: flex;
+    align-items: stretch; /* Hace que el menú y el main midan lo mismo de alto */
+    gap: 20px;
+    padding: 20px;
+    min-height: 70vh; /* Controla que la página sea más grande hacia abajo */
+}
+
+/* Modificado para que sea vertical a la izquierda y se estire */
+nav{
+    background:#2c3e50;
+    width: 250px; 
+    border-radius: 8px;
+    padding: 15px;
+}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;}
+nav ul li a{display:block;padding:12px 20px;color:#fff;text-decoration:none;font-weight:bold}
+nav ul li a:hover{background:#3498db}
+
+/* Mantenemos tu fondo #FF00FF e intacto, ahora más amplio */
+main{flex: 1; max-width:1100px; padding:20px;background:#FF00FF;border-radius:8px;box-shadow:0 0 10px rgb(0, 75, 127)}
+
+/* Forzamos a que el contenido se alinee verticalmente a la izquierda */
+.seccion-izquierda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+footer{background:#eee;padding:20px;text-align:center;margin-top:30px;border-top:1px solid #ccc}
+.datos{display:inline-block;text-align:left;font-size:14px}
+
+/* Estilos simples para las tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #00008B;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #00008B;
+}
+.enlace-tabla {
+    color: #000000;
+    text-decoration: none;
+}
+.enlace-tabla:hover {
+    color: #E9967A;
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<header>
+<img src="DSshee.jpg" width="100" class="logo">
+<h1>Dental Smiler</h1>
+</header>
+
+<div class="contenedor-principal">
+    <nav>
+        <ul>
+            <li><a href="citas.html">Colección: Citas</a></li>
+            <li><a href="materiales.html">Colección: Materiales</a></li>
+            <li><a href="pacientes.html">Colección: Pacientes</a></li>
+            <li><a href="personal.html">Colección: Personal</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="seccion-izquierda">
+            <h2 style="color: white;">Bienvenido a Dental Smiler</h2>
+            <p style="color: white;">En Dental Smiler no solamente contamos con personas y equipo altamente capacitado por las mejores universidades del estado, tenemos la mejor atencion, los cuidados correctos y contamos con mas de 150 años de experiencia en la odontologia, mientras estes con nosotros puedes contar con que resolveremos todos tus problemas, dudas y agregaremos seguridad a tu vida personal y profesional.</p>
+        </section>
+    </main>
+</div>
+
+<footer>
+<div class="datos">
+<p><strong>Alumno:</strong> Moriel Arvilla Cesar Armando</p>
+<p><strong>Control:</strong> 24308051280598</p>
+<p><strong>Semestre/Grupo:</strong> 4to I</p>
+<p><strong>Especialidad:</strong> Programación</p>
+</div>
+</footer>
+</body>
+</html>
